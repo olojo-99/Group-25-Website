@@ -1,0 +1,141 @@
+/* START OF MAIN IMAGE*/
+body{
+  background-color: #F3F3F3;
+}
+
+.main-image{
+  height: 800px;
+  width: 100%;
+  background-image: url("../images/esports.jpg");
+}
+
+.image-text{
+  font-family: Courier,'Courier New', monospace;
+  color: white;
+  float: right;
+  margin: 10px;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: #3B2C55;
+}
+/* END OF MAIN IMAGE */
+
+/* START OF GAMES */
+section{
+  background-color: #3B2C55;
+}
+
+h2{
+  color: white;
+}
+
+p{
+  padding: 10px;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.games{
+  background-color: #3B2C55; /* Container for hexagons and background of hexagons */
+  padding: 5px 0 40px 250px;
+}
+
+.hexagon-gallery {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 1000px;
+  display: grid; /* grid display allows for hexagon shape */
+  grid-template-columns: repeat(8, 1fr); 
+  grid-auto-rows: 200px;
+  grid-gap: 14px;
+  padding-bottom: 50px;
+}
+
+.hex {  /* learned how to create hexagon gallery for the images from a page we researched at https://codepen.io/izer/pen/RYvevG*/
+  display: flex;
+  position: relative;
+  width: 240px;
+  height: 265px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex:first-child {  /* the hexagon gallery was in an unsuitable shape and had too many hexagons; we had to style it to suit our page */
+  grid-row-start: 1;
+  grid-column: 2 / span 2;
+  }
+
+.hex:nth-child(2) {
+  grid-row-start: 1;
+  grid-column: 4 / span 2;
+}
+
+.hex:nth-child(3) {
+  grid-row-start: ;
+  grid-column: 1 / span 2;
+}
+
+.hex:nth-child(4) {
+  grid-row-start: 2;
+  grid-column: 5 / span 2;
+}
+
+.hex:nth-child(5) {
+  grid-row-start: 3;
+  grid-column: 2 / span 2;
+}
+
+.hex:nth-child(6) { /* We designed the gallery to have 6 hexagons; one for each group member */
+  grid-row-start: 3;
+  grid-column: 4 / span 2;
+}
+
+.overlay {  /* learned how to create an overlay for the images from a page we researched at https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;                 
+  left: 0;
+  opacity: 0;
+  transition:all .3s ease;
+  background-color: #715C96;
+  border-radius: 25px;
+  overflow: hidden;
+  }
+  
+.overlay p{   /* The descriptive text for each image can be viewed by hovering the mouse on image */
+  color: white;
+  font-size: 0.75vw;  /* Allow font-size of image description to change based on window size - a problem we solved after testing on different window sizes */
+  position: relative;
+  text-align: center;
+  word-wrap: break-word;  /* Word-wrap property breaks text onto a new line */
+  padding: 0 10px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Aligning the text over the image */
+  }
+  
+.hex:hover .overlay{
+  opacity: 1;
+}
+  
+.learn-more{
+  background-color:#403F42;
+  width: 50%;
+  padding: 1%;
+  border-radius: 10px;
+  }
+
+.learn-more:hover{
+  background-color: #908F8F;
+}
+
+.overlay a{
+  text-decoration: none;
+}
+/* END OF GAMES */
