@@ -1,0 +1,45 @@
+body{
+    background-color: #262626;
+}
+
+section{
+    color: white;
+}
+
+.all-content{
+    margin: 1% 25% 0 25%;
+    padding: 0 20px 60px;
+    background-color:  #0D0D0D;
+}
+
+section{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6{
+    margin: 10px 0;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.images img{
+    width: 75%;
+    height: 75%;
+    margin: 10px 0;
+    border: 3px solid;
+    transition: all 0.25s ease-in-out;
+}
+
+.images img:hover{
+    transform: scale(1.05);
+}
+
+figcaption{
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
