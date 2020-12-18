@@ -1,0 +1,80 @@
+/* START OF STYLING FOR ALL STARCRAFT PAGES*/
+.content{
+    margin: 20px 20% 0 20%;
+}
+
+body{
+    background-color: #AF9EC0;
+    color: white;
+}
+
+section{
+    padding: 10px 0;
+    background-color: #624C78;
+}
+
+figure{
+    text-align: center;
+}
+
+figcaption {
+    font-family: Courier,'Courier New', monospace; /* Different font for captions */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+section img{
+    border: 5px solid black;
+    transition: all 0.25s ease-in-out; /* speed of transition to magnification */
+}
+
+section img:hover{
+    transform: scale(1.05); /* Magnifies image */
+}
+
+/* END OF STYLING FOR ALL STARCRAFT PAGES*/
+
+/* START OF INTRO PAGE */
+.races{
+    display: flex;
+    margin-bottom: 0;
+}
+
+.races figure img{
+    width: 100%;
+    height: 75%;
+}
+
+.video{
+    margin: 60px 75px;
+    float: right;
+}
+
+.review{
+    text-align: center;
+}
+/* END OF INTRO PAGE */
+
+/* START OF COMPETITIONS */
+.media{
+    display: flex;
+    justify-content: center;
+}
+
+.vid, .pic{
+    margin: 0 10px;
+    width: 100%;
+}
+
+.vid iframe{
+    width: 100%;
+    height: 92%;
+}
+/* END OF COMPETITIONS */
+
+/* START OF ALPHASTAR */
+.alphavid{
+    margin-bottom: 5px;
+}
+/* END OF ALPHASTAR */
