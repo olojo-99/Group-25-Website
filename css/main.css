@@ -10,13 +10,16 @@ body{
 }
 
 .image-text{
-  font-family: Courier,'Courier New', monospace;
+  font-family: "Montserrat", sans-serif;
   color: white;
-  float: right;
-  margin: 10px;
+  width: 60%;
+  float: left;
+  margin: 7px;
   padding: 1%;
   border-radius: 5px;
   background-color: #3B2C55;
+  font-size: 16pt;
+  margin-left: 80px;
 }
 /* END OF MAIN IMAGE */
 
